@@ -1,0 +1,14 @@
+<div *ngIf="open ;else by"> hello</div>
+<ng-template #by>
+goodbye
+</ng-template>
+<br>
+<div *ngFor="let item of client;index as i"> {{item}}</div>
+<br>
+<div [ngSwitch]="num">
+<div *ngSwitchCase="1">1</div>
+<div *ngSwitchCase="2">2</div>
+<div *ngSwitchCase="3">3</div>
+<div *ngSwitchCase="4">4</div>
+<div *ngSwitchDefault>5</div>
+</div>
